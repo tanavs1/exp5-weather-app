@@ -1,0 +1,89 @@
+/* My own styles on top of Bootstrap */
+
+body {
+  background-color: #f4f4f4;
+}
+
+.blog-header {
+  background-color: #2c3e50;
+  padding: 70px 0;
+}
+
+.blog-header h1 {
+  font-size: 48px;
+}
+
+/* coloured banner on top of each post card */
+.post-banner {
+  height: 110px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-1 { background-color: #c0392b; }
+.banner-2 { background-color: #d35400; }
+.banner-3 { background-color: #b7950b; }
+.banner-4 { background-color: #1e8449; }
+.banner-5 { background-color: #2471a3; }
+.banner-6 { background-color: #7d3c98; }
+
+.card {
+  border: 1px solid #ddd;
+}
+
+.card:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* tablets and smaller (768px and below) */
+@media (max-width: 768px) {
+  .blog-header {
+    padding: 45px 0;
+  }
+
+  .blog-header h1 {
+    font-size: 34px;
+  }
+
+  .post-banner {
+    height: 90px;
+    font-size: 24px;
+  }
+}
+
+/* phones (576px and below) */
+@media (max-width: 576px) {
+  .blog-header h1 {
+    font-size: 26px;
+  }
+
+  .blog-header .lead {
+    font-size: 16px;
+  }
+
+  .post-banner {
+    height: 70px;
+    font-size: 20px;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+}
+
+/* large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .blog-header {
+    padding: 100px 0;
+  }
+
+  .blog-header h1 {
+    font-size: 56px;
+  }
+}
